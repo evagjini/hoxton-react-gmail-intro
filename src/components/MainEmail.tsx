@@ -4,28 +4,22 @@ import HeaderEmail from "./HeaderEmail";
 import EmailTitle from "./EmailTitle";
 import EmailToolBar from "./EmailToolBar";
 
+function MainEmail() {
+  return (
+    <main className="email-view">
+      <EmailToolBar />
 
- function MainEmail(){
-    return(
-        <main className="email-view">
-        
-        <EmailToolBar /> 
-        
+      <article className="email-content">
+        <EmailTitle />
 
-        <article className="email-content">
+        <HeaderEmail />
 
-             
-         < EmailTitle />
+        <BodyEmail />
 
-         <HeaderEmail />
+        <EmailActions />
+      </article>
+    </main>
+  );
+}
 
-         <BodyEmail />
-         
-         <EmailActions />
-
-         </article>
-         </main>
-    )
- }
-
- export default MainEmail
+export default MainEmail;

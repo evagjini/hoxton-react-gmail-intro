@@ -1,15 +1,13 @@
+import flaticonWelcomeImage from "../assets/images/flaticon-welcome-image.png";
 
-import flaticonWelcomeImage from "./assets/images/flaticon-welcome-image.png";
-import "../styles.email-body.css"
-function BodyEmail(){
-    return(
-        <section className="email-body">
-            <div className="content">
-              <img src={flaticonWelcomeImage} alt="Flaticon welcome message" />
-            </div>
-          </section>
-    )
+function BodyEmail() {
+  return (
+    <section className="email-body">
+      <div className="content">
+        <img src={flaticonWelcomeImage} alt="Flaticon welcome message" />
+      </div>
+    </section>
+  );
 }
 
-
-export default BodyEmail
+export default BodyEmail;
